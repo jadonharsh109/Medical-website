@@ -1,0 +1,263 @@
+/* Css reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* #navbar Css */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    /* height: 80px; */
+    /* position: relative; */
+}
+/* logo and image */
+
+.logo{
+    margin: 20px 25px;
+
+    
+}
+.logo img{
+    
+    /* width: 100px; */
+    height: 60px;
+    margin: 3px 6px;
+
+}
+/* Navigation bar list styling */
+#navbar{
+    
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Farro', sans-serif;
+
+}
+#navbar::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    opacity: 0.85;
+    top: 0px;
+    left: 0px;
+
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.5rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 2px 22px;
+    border-radius: 20px;
+}
+#navbar ul li a:hover{
+    color: black;
+   background-color: white;
+
+}
+/* home section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 7px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 590px;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: url('bg2.jpg') no-repeat center center/cover;
+    height: 657px;
+    width: 100%;
+    opacity: .85;
+    top: 0px;
+    left: 0px;
+
+}
+#home h1{
+    font-size: 2.5rem;
+    padding: 12px;
+    color: white;
+    font-family: 'Newsreader', serif;
+}
+#home p{
+    font-size: 1.3rem;
+    padding: 5px;
+    color: white;
+    text-align: center;
+    font-family: 'Newsreader', serif;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    border-radius: 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
+/* service classes */
+.heading{
+    
+    padding: 12px;
+    color: black;
+    font-family: 'Newsreader', serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: xxx-large;
+   
+
+}
+.service{
+    margin: 34px;
+    display: flex;
+}
+.service .box{
+    border: 2px solid red;
+    text-align: center;
+    margin: 5px 5px;
+    padding: 34px;
+    border-radius: 28px;
+    background-color: azure;
+}
+.service .box img{
+    height: 100px;
+}
+.service box p{
+    font-size: 1.3rem;
+    padding: 10px;
+    /* color: white; */
+    text-align: center;
+    font-family: 'Newsreader', serif;
+    
+}
+.sec-heading{
+    margin: 5px auto;
+    
+}
+/* helper section */
+.client .helper{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+   
+}
+.client img{
+    width: 160px;
+    padding: 0px 55px;
+}
+/* .client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.helper{
+    /* border: 2px solid black; */
+    /* background-color: antiquewhite; */
+}
+.client h1{
+    /* font-size: 2.5rem; */
+    padding: 12px;
+    color: black;
+    font-family: 'Newsreader', serif;
+    text-align: center;
+    font-weight: bold; 
+    font-size: xxx-large;
+    font-weight: bold;
+    padding-top: 20px;
+
+
+}
+.client::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: url('bg3.jpg') no-repeat center center/cover;
+    height: 255px;
+    width: 100%;
+    opacity: .8;
+    
+}
+/* contact section */
+.contact{
+    position: relative;
+}
+.contact::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: url('bg1.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    opacity: .6;
+
+}
+/* footer sectiom */
+.foot{
+    text-align: center;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    padding-right: 70px;
+    font-size: 1.1rem;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 28px;
+    flex-direction: column;
+    top: 14px;
+}
+.contact form{
+width: 100%;
+font-size: 1.5rem;
+}
+.contact lable{
+font-size: 1.7rem;
+font-family: 'Newsreader', serif;
+
+
+}
+#contact-box form{
+    width: 100%
+}
+.contact form button{
+    padding: 5px 25px;
+    border: 3px solid white;
+    background-color: gray;
+    color: white;
+    margin: 0px;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.btn:hover{
+    background: black;
+    color: lavenderblush;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
