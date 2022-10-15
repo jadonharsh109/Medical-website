@@ -1,3 +1,8 @@
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,6 +35,16 @@
             </ul>
         </div>
     </nav>
+
+    <?php
+        if($_SERVER['REQUEST_METHOD'] == 'POST'){
+        $name = $_POST['name'];
+        }
+
+    ?>
+
+
+
     <section id="home">
         <h1 class="heading">Welcome TO Best Online Medical Website</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas reprehenderit dolores maxime deserunt</p>
@@ -88,28 +103,32 @@
             </div>
         </div>
     </section>
+    
+
     <section class="contact">
         <h1 class="heading">Contact Us</h1>
         <div id="contact-box">
-            <form action="">
+            
+            <form method="post "action="insert.php">
                 <div class="form">
                     <label for="name">Name: </label>
                     <input type="text" name="name" id="name" placeholder="Enter Your Name">
                 </div>
                 <div class="form">
                     <label for="name">Email: </label>
-                    <input type="email" name="name" id="name1" placeholder="Enter Your E-mail">
+                    <input type="email" name="email" id="email" placeholder="Enter Your E-mail">
                 </div>
                 <div class="form">
                     <label for="name">Number: </label>
-                    <input type="phone" name="name" id="name2" placeholder="Enter Your Phone Number">
+                    <input type="phone" name="number" id="number" placeholder="Enter Your Phone Number">
                 </div>
                 <div class="form">
                     <label for="name">Message: </label>
                     <textarea name="message" id="message" cols="30" rows="6"></textarea>
                 </div>
-                <button class="btn">Submit</button>
+                <input type="submit" value="Submit">
             </form>
+            
         </div>
     </section>
     <footer>
@@ -120,5 +139,6 @@
     </footer>
 </body>
 
-
 </html>
+
+
